@@ -303,13 +303,13 @@ def setup_rag_system(pdf_directory: str = "references", force_recreate: bool = F
     """
     rag = NephrologyRAG()
     
-    # Check if database already exists
+    # Check if database
     if os.path.exists(rag.persist_directory) and not force_recreate:
         print("Existing vector database found. Loading...")
         rag.load_existing_database()
         return rag
     
-    # Check for PDF files
+    # PDF 
     if os.path.exists(pdf_directory) and os.listdir(pdf_directory):
         pdf_files = [f for f in os.listdir(pdf_directory) if f.endswith('.pdf')]
         if pdf_files:

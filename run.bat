@@ -1,12 +1,12 @@
 @echo off
-REM Windows batch script to run the Medical AI application
+REM Windows 
 
 echo ====================================
 echo Medical AI POC - Starting Application
 echo ====================================
 echo.
 
-REM Check if virtual environment exists
+REM Check
 if not exist "venv\" (
     echo [ERROR] Virtual environment not found!
     echo Please run: python -m venv venv
@@ -16,11 +16,11 @@ if not exist "venv\" (
     exit /b 1
 )
 
-REM Activate virtual environment
+REM Activate
 echo [1/3] Activating virtual environment...
 call venv\Scripts\activate
 
-REM Check if .env exists
+REM Check if 
 if not exist ".env" (
     if exist "env.example" (
         echo.

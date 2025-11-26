@@ -18,14 +18,14 @@ def get_patient_report(patient_name: str) -> str:
         JSON string with patient information or error message
     """
     try:
-        # Get the correct path relative to project root
+        # project root
         current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         patient_file = os.path.join(current_dir, "data", "patients.json")
         
         with open(patient_file, 'r') as f:
             patients = json.load(f)
         
-        # Search for patient (case-insensitive)
+        # Search for patient
         patient_name_lower = patient_name.lower().strip()
         matches = [p for p in patients if p["patient_name"].lower() == patient_name_lower]
         
@@ -34,7 +34,7 @@ def get_patient_report(patient_name: str) -> str:
         elif len(matches) > 1:
             return f"⚠️ Multiple patients found with name '{patient_name}'. Please provide more specific information (e.g., patient ID)."
         
-        # Format the patient report nicely
+        # Format the patient
         patient = matches[0]
         report = f"""
 ✅ **Patient Discharge Summary Found**

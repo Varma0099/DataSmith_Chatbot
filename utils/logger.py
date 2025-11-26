@@ -41,7 +41,7 @@ class MedicalAILogger:
         logger = logging.getLogger(name)
         logger.setLevel(level)
         
-        # Remove existing handlers
+        # Remove 
         logger.handlers = []
         
         # File handler
@@ -53,7 +53,7 @@ class MedicalAILogger:
         file_handler.setFormatter(self.detailed_formatter)
         logger.addHandler(file_handler)
         
-        # Console handler for errors
+        # Console handler
         if level >= logging.ERROR:
             console_handler = logging.StreamHandler()
             console_handler.setLevel(level)

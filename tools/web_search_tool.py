@@ -6,7 +6,6 @@ import os
 from typing import Optional
 from dotenv import load_dotenv
 
-# Load environment variables
 load_dotenv()
 
 
@@ -22,7 +21,7 @@ def web_search(query: str, max_results: int = 3) -> str:
         Formatted string with search results including titles, content, and URLs
     """
     try:
-        # Try to use Tavily API
+    
         tavily_key = os.getenv("TAVILY_API_KEY")
         
         if tavily_key and tavily_key != "your-tavily-api-key-here":
@@ -49,11 +48,11 @@ def web_search(query: str, max_results: int = 3) -> str:
                 return formatted_results
                 
             except ImportError:
-                pass  # Fall through to mock results
+                pass  # results
             except Exception as e:
                 return f"⚠️ Web search temporarily unavailable: {str(e)}\nPlease rely on the knowledge base for now."
         
-        # Fallback: Return helpful message if Tavily is not configured
+    
         return _get_mock_search_results(query)
         
     except Exception as e:
@@ -67,7 +66,7 @@ def _get_mock_search_results(query: str) -> str:
     """
     query_lower = query.lower()
     
-    # Provide relevant mock results based on common nephrology queries
+    # Provide relevant mock
     if any(word in query_lower for word in ["kidney", "renal", "nephro"]):
         return """🔍 **Web Search Results:**
 

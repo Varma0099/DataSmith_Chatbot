@@ -9,14 +9,12 @@ from langchain.tools import Tool
 from dotenv import load_dotenv
 import logging
 
-# Import custom tools
 from tools.patient_tool import get_patient_report, search_patient_by_id
 from tools.web_search_tool import web_search
 
-# Load environment variables
+
 load_dotenv()
 
-# Configure logging
 logging.basicConfig(
     filename='logs/agent_activity.log',
     level=logging.INFO,
@@ -37,19 +35,18 @@ class MedicalAICrew:
         """
         self.rag_retriever = rag_retriever
         
-        # Initialize LLM with Google Gemini
+        
         api_key = os.getenv("GOOGLE_API_KEY")
         if not api_key or api_key == "your-google-api-key-here":
             logger.warning("Google Gemini API key not configured. Using fallback.")
-            # For demo purposes, we'll still initialize but it won't work without a real key
-        
+           
         self.llm = ChatGoogleGenerativeAI(
             model="gemini-2.5-flash",
             temperature=0.7,
             google_api_key=api_key
         )
         
-        # Create tools
+    
         self.patient_tool = Tool(
             name="PatientReportRetrieval",
             func=get_patient_report,
@@ -80,8 +77,7 @@ class MedicalAICrew:
             Returns relevant information from trusted medical sources.
             """
         )
-        
-        # Create agents
+    
         self.receptionist_agent = self._create_receptionist_agent()
         self.clinical_agent = self._create_clinical_agent()
         
@@ -145,15 +141,14 @@ class MedicalAICrew:
         """
         try:
             logger.info(f"Processing message: {user_message[:100]}")
-            
-            # Determine which agent should handle this
+        
             is_medical_question = self._is_medical_question(user_message)
             
             if is_medical_question:
-                # Clinical question - needs clinical agent with RAG
+                
                 response = self._handle_clinical_question(user_message)
             else:
-                # Receptionist handles greetings, patient lookup, general navigation
+                # Reception
                 response = self._handle_receptionist_task(user_message)
             
             logger.info("Message processed successfully")
@@ -207,7 +202,7 @@ class MedicalAICrew:
     
     def _handle_clinical_question(self, message: str) -> str:
         """Handle clinical questions with RAG"""
-        # Get relevant context from RAG if available
+        # RAG if available
         context = ""
         if self.rag_retriever:
             try:
@@ -247,7 +242,7 @@ class MedicalAICrew:
         
         result = crew.kickoff()
         
-        # Add disclaimer if not present
+        # if not present
         result_str = str(result)
         if "consult" not in result_str.lower() or "disclaimer" not in result_str.lower():
             result_str += "\n\n⚕️ **Medical Disclaimer**: This information is for educational purposes only. Always consult your healthcare provider for personalized medical advice."
@@ -267,13 +262,13 @@ class MedicalAICrew:
         if not messages:
             return "Hello! I'm your post-discharge care assistant. How can I help you today?"
         
-        # Get the latest message
+    
         latest_message = messages[-1]['content']
         
-        # Build conversation context
+        
         context = "\n".join([
             f"{msg['role']}: {msg['content']}" 
-            for msg in messages[-5:]  # Last 5 messages for context
+            for msg in messages[-5:]  
         ])
         
         return self.process_message(latest_message, messages)
@@ -293,7 +288,7 @@ def create_medical_crew(rag_retriever=None):
 
 
 if __name__ == "__main__":
-    # Test the crew
+    
     print("Initializing Medical AI Crew...")
     crew = create_medical_crew()
     
