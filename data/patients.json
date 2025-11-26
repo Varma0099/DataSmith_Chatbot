@@ -1,0 +1,491 @@
+[
+  {
+    "patient_id": "P001",
+    "patient_name": "John Smith",
+    "age": 58,
+    "gender": "Male",
+    "discharge_date": "2024-01-15",
+    "primary_diagnosis": "Chronic Kidney Disease Stage 3",
+    "secondary_diagnosis": "Hypertension, Type 2 Diabetes",
+    "medications": [
+      "Lisinopril 10mg daily",
+      "Furosemide 20mg twice daily",
+      "Metformin 500mg twice daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day), protein restriction (0.8g/kg/day)",
+    "warning_signs": "Swelling in legs or ankles, shortness of breath, decreased urine output, chest pain",
+    "follow_up_date": "2024-02-15",
+    "doctor": "Dr. Sarah Johnson"
+  },
+  {
+    "patient_id": "P002",
+    "patient_name": "Maria Garcia",
+    "age": 45,
+    "gender": "Female",
+    "discharge_date": "2024-01-18",
+    "primary_diagnosis": "Acute Kidney Injury - Resolved",
+    "secondary_diagnosis": "Dehydration, UTI",
+    "medications": [
+      "Cephalexin 500mg four times daily (7 days)",
+      "Acetaminophen 500mg as needed for pain"
+    ],
+    "dietary_restrictions": "Increase fluid intake to 2-3L/day, no specific restrictions",
+    "warning_signs": "Fever above 101°F, burning urination, blood in urine, severe back pain",
+    "follow_up_date": "2024-01-25",
+    "doctor": "Dr. Michael Chen"
+  },
+  {
+    "patient_id": "P003",
+    "patient_name": "Robert Johnson",
+    "age": 62,
+    "gender": "Male",
+    "discharge_date": "2024-01-20",
+    "primary_diagnosis": "End-Stage Renal Disease on Hemodialysis",
+    "secondary_diagnosis": "Anemia, Hyperkalemia",
+    "medications": [
+      "Epoetin alfa injection weekly",
+      "Sevelamer 800mg three times daily with meals",
+      "Sodium polystyrene sulfonate as needed"
+    ],
+    "dietary_restrictions": "Low potassium (<2000mg/day), low phosphorus (<1000mg/day), fluid restriction (1L/day)",
+    "warning_signs": "Missed dialysis session, severe weakness, irregular heartbeat, confusion",
+    "follow_up_date": "Dialysis 3x/week - Next session 2024-01-22",
+    "doctor": "Dr. Sarah Johnson"
+  },
+  {
+    "patient_id": "P004",
+    "patient_name": "Linda Martinez",
+    "age": 51,
+    "gender": "Female",
+    "discharge_date": "2024-01-22",
+    "primary_diagnosis": "Chronic Kidney Disease Stage 4",
+    "secondary_diagnosis": "Secondary hyperparathyroidism",
+    "medications": [
+      "Calcitriol 0.25mcg daily",
+      "Calcium carbonate 500mg three times daily",
+      "Amlodipine 5mg daily"
+    ],
+    "dietary_restrictions": "Low phosphorus diet, moderate protein (0.6g/kg/day), sodium restriction (2g/day)",
+    "warning_signs": "Bone pain, muscle cramps, nausea and vomiting, extreme fatigue",
+    "follow_up_date": "2024-02-22",
+    "doctor": "Dr. Emily Rodriguez"
+  },
+  {
+    "patient_id": "P005",
+    "patient_name": "James Wilson",
+    "age": 70,
+    "gender": "Male",
+    "discharge_date": "2024-01-25",
+    "primary_diagnosis": "Diabetic Nephropathy",
+    "secondary_diagnosis": "Type 2 Diabetes, Peripheral Neuropathy",
+    "medications": [
+      "Insulin glargine 20 units at bedtime",
+      "Lisinopril 20mg daily",
+      "Gabapentin 300mg three times daily"
+    ],
+    "dietary_restrictions": "Diabetic diet, protein restriction (0.8g/kg/day), sodium restriction (2g/day)",
+    "warning_signs": "Blood sugar below 70 or above 300, swelling, difficulty breathing",
+    "follow_up_date": "2024-02-08",
+    "doctor": "Dr. Michael Chen"
+  },
+  {
+    "patient_id": "P006",
+    "patient_name": "Patricia Brown",
+    "age": 55,
+    "gender": "Female",
+    "discharge_date": "2024-01-28",
+    "primary_diagnosis": "Polycystic Kidney Disease",
+    "secondary_diagnosis": "Hypertension",
+    "medications": [
+      "Tolvaptan 45mg daily",
+      "Losartan 50mg daily",
+      "Ibuprofen 400mg as needed (use sparingly)"
+    ],
+    "dietary_restrictions": "Increase water intake (2-3L/day), low sodium (2g/day)",
+    "warning_signs": "Severe flank pain, blood in urine, fever, severe headache",
+    "follow_up_date": "2024-03-28",
+    "doctor": "Dr. Sarah Johnson"
+  },
+  {
+    "patient_id": "P007",
+    "patient_name": "Michael Davis",
+    "age": 48,
+    "gender": "Male",
+    "discharge_date": "2024-02-01",
+    "primary_diagnosis": "Nephrotic Syndrome",
+    "secondary_diagnosis": "Hyperlipidemia, Edema",
+    "medications": [
+      "Prednisone 60mg daily",
+      "Furosemide 40mg twice daily",
+      "Atorvastatin 40mg daily",
+      "Warfarin 5mg daily"
+    ],
+    "dietary_restrictions": "Low sodium (1.5g/day), low fat diet, adequate protein",
+    "warning_signs": "Severe swelling, difficulty breathing, signs of blood clots, increased urination",
+    "follow_up_date": "2024-02-15",
+    "doctor": "Dr. Emily Rodriguez"
+  },
+  {
+    "patient_id": "P008",
+    "patient_name": "Jennifer Miller",
+    "age": 39,
+    "gender": "Female",
+    "discharge_date": "2024-02-03",
+    "primary_diagnosis": "Lupus Nephritis",
+    "secondary_diagnosis": "Systemic Lupus Erythematosus",
+    "medications": [
+      "Mycophenolate mofetil 1000mg twice daily",
+      "Prednisone 20mg daily",
+      "Hydroxychloroquine 200mg twice daily"
+    ],
+    "dietary_restrictions": "Balanced diet, moderate sodium restriction",
+    "warning_signs": "Facial rash, joint pain, fever, decreased urine output",
+    "follow_up_date": "2024-02-17",
+    "doctor": "Dr. Michael Chen"
+  },
+  {
+    "patient_id": "P009",
+    "patient_name": "David Anderson",
+    "age": 65,
+    "gender": "Male",
+    "discharge_date": "2024-02-05",
+    "primary_diagnosis": "Chronic Kidney Disease Stage 2",
+    "secondary_diagnosis": "Obesity, Sleep Apnea",
+    "medications": [
+      "Lisinopril 5mg daily",
+      "Aspirin 81mg daily"
+    ],
+    "dietary_restrictions": "Weight loss diet (1800 cal/day), low sodium (2g/day), increase fruits and vegetables",
+    "warning_signs": "Swelling, blood in urine, persistent fatigue",
+    "follow_up_date": "2024-05-05",
+    "doctor": "Dr. Sarah Johnson"
+  },
+  {
+    "patient_id": "P010",
+    "patient_name": "Susan Taylor",
+    "age": 73,
+    "gender": "Female",
+    "discharge_date": "2024-02-08",
+    "primary_diagnosis": "End-Stage Renal Disease - Peritoneal Dialysis",
+    "secondary_diagnosis": "Anemia, Mineral Bone Disease",
+    "medications": [
+      "Darbepoetin alfa injection bi-weekly",
+      "Sevelamer 1600mg three times daily",
+      "Calcitriol 0.5mcg daily"
+    ],
+    "dietary_restrictions": "High protein (1.2-1.5g/kg/day), low phosphorus, fluid restriction based on output",
+    "warning_signs": "Cloudy dialysis fluid, abdominal pain, fever, catheter site redness",
+    "follow_up_date": "Weekly monitoring calls, clinic visit 2024-03-08",
+    "doctor": "Dr. Emily Rodriguez"
+  },
+  {
+    "patient_id": "P011",
+    "patient_name": "Christopher White",
+    "age": 56,
+    "gender": "Male",
+    "discharge_date": "2024-02-10",
+    "primary_diagnosis": "IgA Nephropathy",
+    "secondary_diagnosis": "Hypertension",
+    "medications": [
+      "Lisinopril 40mg daily",
+      "Omega-3 fatty acids 3g daily",
+      "Prednisone 30mg daily (tapering)"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), omega-3 rich foods (fish)",
+    "warning_signs": "Blood in urine, severe back pain, swelling, high blood pressure",
+    "follow_up_date": "2024-03-10",
+    "doctor": "Dr. Michael Chen"
+  },
+  {
+    "patient_id": "P012",
+    "patient_name": "Nancy Thomas",
+    "age": 42,
+    "gender": "Female",
+    "discharge_date": "2024-02-12",
+    "primary_diagnosis": "Kidney Stones - Post-lithotripsy",
+    "secondary_diagnosis": "Hypercalciuria",
+    "medications": [
+      "Hydrochlorothiazide 25mg daily",
+      "Potassium citrate 10mEq twice daily",
+      "Ibuprofen 400mg as needed"
+    ],
+    "dietary_restrictions": "Increase fluid intake (2.5-3L/day), low sodium, moderate calcium, low oxalate foods",
+    "warning_signs": "Severe flank pain, blood in urine, fever, inability to urinate",
+    "follow_up_date": "2024-03-12",
+    "doctor": "Dr. Sarah Johnson"
+  },
+  {
+    "patient_id": "P013",
+    "patient_name": "Daniel Jackson",
+    "age": 68,
+    "gender": "Male",
+    "discharge_date": "2024-02-14",
+    "primary_diagnosis": "Chronic Kidney Disease Stage 3B",
+    "secondary_diagnosis": "Congestive Heart Failure, Atrial Fibrillation",
+    "medications": [
+      "Carvedilol 12.5mg twice daily",
+      "Furosemide 40mg daily",
+      "Apixaban 5mg twice daily",
+      "Spironolactone 25mg daily"
+    ],
+    "dietary_restrictions": "Fluid restriction (1.5L/day), low sodium (1.5g/day), low potassium",
+    "warning_signs": "Shortness of breath, rapid weight gain, irregular heartbeat, swelling",
+    "follow_up_date": "2024-02-28",
+    "doctor": "Dr. Emily Rodriguez"
+  },
+  {
+    "patient_id": "P014",
+    "patient_name": "Karen Harris",
+    "age": 50,
+    "gender": "Female",
+    "discharge_date": "2024-02-16",
+    "primary_diagnosis": "Chronic Glomerulonephritis",
+    "secondary_diagnosis": "Proteinuria",
+    "medications": [
+      "Losartan 100mg daily",
+      "Prednisone 40mg daily",
+      "Cholecalciferol 2000 IU daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), moderate protein",
+    "warning_signs": "Foamy urine, swelling, high blood pressure, fatigue",
+    "follow_up_date": "2024-03-16",
+    "doctor": "Dr. Michael Chen"
+  },
+  {
+    "patient_id": "P015",
+    "patient_name": "Thomas Martin",
+    "age": 61,
+    "gender": "Male",
+    "discharge_date": "2024-02-18",
+    "primary_diagnosis": "Acute Tubular Necrosis - Recovering",
+    "secondary_diagnosis": "Post-surgical complication",
+    "medications": [
+      "Pantoprazole 40mg daily",
+      "Acetaminophen 500mg as needed"
+    ],
+    "dietary_restrictions": "Normal diet, adequate hydration (2L/day)",
+    "warning_signs": "Decreased urine output, swelling, confusion, persistent nausea",
+    "follow_up_date": "2024-03-04",
+    "doctor": "Dr. Sarah Johnson"
+  },
+  {
+    "patient_id": "P016",
+    "patient_name": "Barbara Thompson",
+    "age": 57,
+    "gender": "Female",
+    "discharge_date": "2024-02-20",
+    "primary_diagnosis": "Focal Segmental Glomerulosclerosis",
+    "secondary_diagnosis": "Nephrotic Syndrome",
+    "medications": [
+      "Tacrolimus 3mg twice daily",
+      "Prednisone 50mg daily",
+      "Furosemide 20mg daily",
+      "Atorvastatin 20mg daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), adequate protein (1g/kg/day)",
+    "warning_signs": "Severe edema, difficulty breathing, signs of infection",
+    "follow_up_date": "2024-03-06",
+    "doctor": "Dr. Emily Rodriguez"
+  },
+  {
+    "patient_id": "P017",
+    "patient_name": "Richard Moore",
+    "age": 72,
+    "gender": "Male",
+    "discharge_date": "2024-02-22",
+    "primary_diagnosis": "Renovascular Disease",
+    "secondary_diagnosis": "Renal Artery Stenosis",
+    "medications": [
+      "Clopidogrel 75mg daily",
+      "Atorvastatin 80mg daily",
+      "Amlodipine 10mg daily"
+    ],
+    "dietary_restrictions": "Heart-healthy diet, low sodium (2g/day), low cholesterol",
+    "warning_signs": "Chest pain, severe headache, sudden weakness, blood pressure spikes",
+    "follow_up_date": "2024-03-22",
+    "doctor": "Dr. Michael Chen"
+  },
+  {
+    "patient_id": "P018",
+    "patient_name": "Elizabeth Lee",
+    "age": 44,
+    "gender": "Female",
+    "discharge_date": "2024-02-24",
+    "primary_diagnosis": "Kidney Transplant - Post-op Day 30",
+    "secondary_diagnosis": "Immunosuppression management",
+    "medications": [
+      "Tacrolimus 4mg twice daily",
+      "Mycophenolate mofetil 500mg twice daily",
+      "Prednisone 15mg daily",
+      "Valganciclovir 450mg daily",
+      "Trimethoprim-sulfamethoxazole daily"
+    ],
+    "dietary_restrictions": "Avoid raw/undercooked foods, high fiber diet, adequate hydration",
+    "warning_signs": "Fever, decreased urine output, pain over transplant site, unusual fatigue",
+    "follow_up_date": "Weekly labs and clinic visits",
+    "doctor": "Dr. Sarah Johnson"
+  },
+  {
+    "patient_id": "P019",
+    "patient_name": "Joseph Walker",
+    "age": 59,
+    "gender": "Male",
+    "discharge_date": "2024-02-26",
+    "primary_diagnosis": "Hypertensive Nephrosclerosis",
+    "secondary_diagnosis": "Stage 3A CKD, Hypertension",
+    "medications": [
+      "Amlodipine 10mg daily",
+      "Lisinopril 40mg daily",
+      "Hydralazine 25mg three times daily"
+    ],
+    "dietary_restrictions": "DASH diet, low sodium (1.5g/day), rich in fruits/vegetables",
+    "warning_signs": "Severe headache, chest pain, vision changes, shortness of breath",
+    "follow_up_date": "2024-03-12",
+    "doctor": "Dr. Emily Rodriguez"
+  },
+  {
+    "patient_id": "P020",
+    "patient_name": "Sarah Hall",
+    "age": 36,
+    "gender": "Female",
+    "discharge_date": "2024-02-28",
+    "primary_diagnosis": "Pregnancy-related Acute Kidney Injury - Resolved",
+    "secondary_diagnosis": "Preeclampsia (postpartum)",
+    "medications": [
+      "Labetalol 200mg twice daily",
+      "Magnesium supplement 400mg daily"
+    ],
+    "dietary_restrictions": "Normal postpartum diet, adequate hydration",
+    "warning_signs": "Severe headache, vision changes, upper abdominal pain, seizure",
+    "follow_up_date": "2024-03-14",
+    "doctor": "Dr. Michael Chen"
+  },
+  {
+    "patient_id": "P021",
+    "patient_name": "Mark Allen",
+    "age": 66,
+    "gender": "Male",
+    "discharge_date": "2024-03-01",
+    "primary_diagnosis": "Chronic Kidney Disease Stage 4",
+    "secondary_diagnosis": "Preparation for dialysis",
+    "medications": [
+      "Furosemide 80mg twice daily",
+      "Sodium bicarbonate 650mg three times daily",
+      "Epoetin alfa weekly",
+      "Ferrous sulfate 325mg daily"
+    ],
+    "dietary_restrictions": "Low potassium, low phosphorus, protein restriction (0.6g/kg/day)",
+    "warning_signs": "Severe fatigue, confusion, chest pain, irregular heartbeat",
+    "follow_up_date": "2024-03-08 - AV fistula evaluation",
+    "doctor": "Dr. Sarah Johnson"
+  },
+  {
+    "patient_id": "P022",
+    "patient_name": "Jessica Young",
+    "age": 41,
+    "gender": "Female",
+    "discharge_date": "2024-03-03",
+    "primary_diagnosis": "Membranous Nephropathy",
+    "secondary_diagnosis": "Nephrotic Syndrome",
+    "medications": [
+      "Rituximab infusion (completed)",
+      "Losartan 100mg daily",
+      "Furosemide 40mg daily",
+      "Rosuvastatin 20mg daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), low saturated fat",
+    "warning_signs": "Severe swelling, difficulty breathing, chest pain, blood clots",
+    "follow_up_date": "2024-04-03",
+    "doctor": "Dr. Emily Rodriguez"
+  },
+  {
+    "patient_id": "P023",
+    "patient_name": "Brian King",
+    "age": 54,
+    "gender": "Male",
+    "discharge_date": "2024-03-05",
+    "primary_diagnosis": "Rhabdomyolysis with AKI - Resolved",
+    "secondary_diagnosis": "Statin-induced myopathy",
+    "medications": [
+      "Acetaminophen 500mg as needed",
+      "Pantoprazole 40mg daily"
+    ],
+    "dietary_restrictions": "Adequate hydration (2.5L/day), normal diet",
+    "warning_signs": "Dark urine, muscle pain, weakness, decreased urination",
+    "follow_up_date": "2024-03-19",
+    "doctor": "Dr. Michael Chen"
+  },
+  {
+    "patient_id": "P024",
+    "patient_name": "Michelle Wright",
+    "age": 49,
+    "gender": "Female",
+    "discharge_date": "2024-03-07",
+    "primary_diagnosis": "Chronic Kidney Disease Stage 3A",
+    "secondary_diagnosis": "Hyperlipidemia, Vitamin D deficiency",
+    "medications": [
+      "Atorvastatin 40mg daily",
+      "Lisinopril 20mg daily",
+      "Cholecalciferol 2000 IU daily"
+    ],
+    "dietary_restrictions": "Mediterranean diet, low sodium (2g/day), omega-3 rich foods",
+    "warning_signs": "Swelling, decreased urination, persistent fatigue, shortness of breath",
+    "follow_up_date": "2024-06-07",
+    "doctor": "Dr. Sarah Johnson"
+  },
+  {
+    "patient_id": "P025",
+    "patient_name": "Kevin Lopez",
+    "age": 63,
+    "gender": "Male",
+    "discharge_date": "2024-03-09",
+    "primary_diagnosis": "Contrast-Induced Nephropathy - Recovering",
+    "secondary_diagnosis": "Post cardiac catheterization",
+    "medications": [
+      "Acetylcysteine 600mg twice daily (3 days)",
+      "Normal saline hydration protocol"
+    ],
+    "dietary_restrictions": "Increase oral fluids (2-3L/day), normal diet",
+    "warning_signs": "Decreased urine output, swelling, confusion, nausea",
+    "follow_up_date": "2024-03-16",
+    "doctor": "Dr. Emily Rodriguez"
+  },
+  {
+    "patient_id": "P026",
+    "patient_name": "Angela Hill",
+    "age": 52,
+    "gender": "Female",
+    "discharge_date": "2024-03-11",
+    "primary_diagnosis": "Autosomal Dominant Polycystic Kidney Disease",
+    "secondary_diagnosis": "Stage 3B CKD, Liver cysts",
+    "medications": [
+      "Tolvaptan 60mg in AM, 30mg in PM",
+      "Olmesartan 40mg daily",
+      "Vitamin D3 1000 IU daily"
+    ],
+    "dietary_restrictions": "High water intake (3L/day), low sodium (2g/day), moderate protein",
+    "warning_signs": "Severe flank pain, blood in urine, fever, severe headache",
+    "follow_up_date": "2024-04-11",
+    "doctor": "Dr. Michael Chen"
+  },
+  {
+    "patient_id": "P027",
+    "patient_name": "Gregory Scott",
+    "age": 69,
+    "gender": "Male",
+    "discharge_date": "2024-03-13",
+    "primary_diagnosis": "End-Stage Renal Disease - Home Hemodialysis",
+    "secondary_diagnosis": "Diabetic nephropathy, Anemia",
+    "medications": [
+      "Insulin detemir 25 units at bedtime",
+      "Darbepoetin alfa monthly",
+      "Sevelamer 2400mg three times daily",
+      "Calcitriol 0.25mcg daily"
+    ],
+    "dietary_restrictions": "Diabetic renal diet, low potassium, low phosphorus, fluid restriction (1L/day)",
+    "warning_signs": "Equipment malfunction, chest pain, severe hypoglycemia, access site issues",
+    "follow_up_date": "Monthly clinic visits, daily home dialysis",
+    "doctor": "Dr. Sarah Johnson"
+  }
+]
+

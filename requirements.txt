@@ -1,0 +1,33 @@
+# Core Dependencies
+langchain==0.1.13
+langchain-community==0.0.29
+langchain-google-genai==0.0.6
+crewai
+crewai-tools
+
+# Vector Database & Embeddings
+chromadb
+sentence-transformers==2.3.1
+faiss-cpu==1.7.4
+
+# Document Processing
+pypdf==3.17.4
+pypdf2==3.0.1
+
+# Web Framework
+streamlit==1.31.0
+fastapi==0.109.0
+uvicorn==0.27.0
+pydantic==2.11.9
+
+# Web Search
+tavily-python==0.3.3
+
+# Utilities
+python-dotenv
+google-generativeai==0.3.2
+requests==2.31.0
+
+# Logging & Data
+pandas==2.2.0
+numpy==1.26.3
