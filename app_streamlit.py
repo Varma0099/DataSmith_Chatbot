@@ -17,14 +17,6 @@ except ValueError as e:
     st.error(f"Configuration Error: {e}")
     st.stop()
 
-# Set page config
-st.set_page_config(
-    page_title="Health Monitoring Chatbot",
-    page_icon="🏥",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
-
 # Error handling wrapper
 try:
     # Your main app code here
@@ -32,6 +24,7 @@ try:
 except Exception as e:
     logger.error(f"App error: {e}", exc_info=True)
     st.error(f"An error occurred. Please try again. Error: {str(e)}")
+
 # Add current directory to path for imports
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
